@@ -1,0 +1,15 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/market
+    username: postgres
+    password: 5566
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update # Это создаст схему базы данных при старте приложения
+    properties:
+      hibernate:
+        show-sql: true # Включает вывод SQL-запросов в консоль
